@@ -1,3 +1,4 @@
+//* connects this page to the app.js page
 var app = angular.module('chatroom');
 
 app.factory('httpRequestInterceptor', function () {
