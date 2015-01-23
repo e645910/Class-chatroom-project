@@ -20,7 +20,8 @@ app.controller('mainCtrl', function($scope, parseService){
 
   $scope.postData = function() {
     parseService.postData($scope.message).then(function() {
-      $scope.getParseData();//invokes the above method
+      $scope.getParseData();//invokes the above method which then goes over to parseService.js and 
+      // runs the app.parseService POST method via parameter $http
     });
   }
 
